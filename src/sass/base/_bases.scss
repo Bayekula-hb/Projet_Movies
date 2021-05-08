@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+.block--hide{
+    display: none;
+}
+.block--view{
+    display: block;
+}
