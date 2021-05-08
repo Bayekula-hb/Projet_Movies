@@ -26,7 +26,7 @@ const Header = () => {
         <div className="collapse navbar-collapse  col-7 row justify-content-between" id="navbarTogglerDemo02">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0 col-4">
             <li className="nav-item active col-6">
-              <Link className="link--home nav-link" to="/"> Home  <span className="sr-only">(current)</span> </Link>
+              <Link className="link--home nav-link" to="/"> Home  <span className="sr-only"></span> </Link>
             </li>
             <li className="nav-item col-5">
               <Link className="nav-link link--movies" to="/movies"> Movies </Link>
