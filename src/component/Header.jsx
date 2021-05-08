@@ -12,7 +12,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light  row justify-content-around" >
         <h1 className="navbar-brand col-1"><Link className="link link--h1" to="/"> H-Cine  </Link></h1>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler col-6"
           type="button"
           data-toggle="collapse"
           data-target="#navbarTogglerDemo02"
@@ -32,14 +32,14 @@ const Header = () => {
               <Link className="nav-link link--movies" to="/movies"> Movies </Link>
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0 col-4">
+          <form className="form-inline my-2 my-lg-0 col-12  col-sm-6">
             <input
-              className="form-control mr-sm-2"
+              className="form-control mr-sm-2 col-6 col-sm-6 "
               type="search"
               placeholder="Search"
             />
             <button
-              className="btn btn-outline-success my-2 my-sm-0"
+              className="btn btn-outline-success my-2 my-sm-0 col-6 col-sm-4"
               type="submit"
             >
               Search
