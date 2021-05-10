@@ -1,7 +1,5 @@
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-import ReactLoading from "react-loading";
-import { useState } from "react";
 
 
 const CardFilm = ({imageFilm, titleFilm, overviewFilm, idMovies, clickCard}) => {

@@ -19,7 +19,7 @@ const CarouselMovies = () => {
         setLoading(false);
       });
   }, []);
-  const linkImage = "https://image.tmdb.org/t/p/w1280/";
+  // const linkImage = "https://image.tmdb.org/t/p/w1280/";
   const filmTab = listFilm.filter((film, index) => {
     if (index > 0 && index < 4) {
       return film;
@@ -36,7 +36,7 @@ const CarouselMovies = () => {
             {loading ? <ReactLoading type="bars" color="#ee5253" height={'20%'} width={'20%'} /> :
             <img
               className="d-block w-100 img--carousel"
-              src={linkImage+film.backdrop_path}
+              src={"https://image.tmdb.org/t/p/original/"+film.backdrop_path}
               alt={film.title}
             />}
             <Carousel.Caption>

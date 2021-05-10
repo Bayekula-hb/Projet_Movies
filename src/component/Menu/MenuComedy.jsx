@@ -5,12 +5,12 @@ const MenuComedy = ()=>{
 
     return(
         <Ul
-          className="menu--list"
+          className="menu--list row "
           contentUl1={
             <Li
-              className="Li Li-home col-md-auto"
+              className="Li Li-home col-6 col-md-auto"
               contentLi={
-                <Link className="link link--home" to="/">
+                <Link className="link link--home" to="/movies/comedy">
                   Featured
                 </Link>
               }
@@ -20,7 +20,7 @@ const MenuComedy = ()=>{
             <Li
               className="Li Li-home col-12 col-md-6"
               contentLi={
-                <Link className="link link--movies" to="/movies">
+                <Link className="link link--movies" to="/movies/comedy">
                   {" "}
                   Comming Soon{" "}
                 </Link>

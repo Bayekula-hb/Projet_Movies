@@ -30,6 +30,9 @@ const App = () => {
           <Route exact path="/">
             <Mainhome />
           </Route>
+          <Route path="/movies">
+            <Mainhome />
+          </Route>
         </filmPopularContext.Provider>
       </Switch>
     </>

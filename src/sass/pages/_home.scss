@@ -26,20 +26,56 @@ main {
     & li {
     }
   }
-  & .section--movies {
+  & .section {
+    padding: 2% 0.5%;
     display: flex;
     justify-content: space-between;
     & .categoryMovie {
       font-size: 3rem;
+      text-transform: uppercase;
+      color: seashell;
+      font-weight: 700;
     }
     & .movies--container {
-      & .card--film{
-        margin: 1% 0%;
-        & .image--card{
-          width: 100%;
+      font-size: 2rem;
+      & .container--movies--header {
+        display: flex;
+        justify-content: space-between;
+
+        .menu-left {
+          .link {
+            color: seashell;
+            text-transform: uppercase;
+          }
+        }
+        .menu-right {
+          .link--plus {
+            color: seashell;
+            text-transform: uppercase;
+          }
         }
       }
-
+      & .card--film {
+        padding: 0%;
+        margin: 1% 0%;
+        height: 60%;
+        & .image--card {
+          width: 100%;
+          height: 250px;
+        }
+      }
     }
+  }
+  & .section--action {
+    background-color: #2f3542;
+  }
+  & .section--drama{
+    flex-direction: row-reverse;
+    background-color: #84817a;
+   
+  }
+  & .section--comedy{
+    background-color: #2f3542;
+  
   }
 }
