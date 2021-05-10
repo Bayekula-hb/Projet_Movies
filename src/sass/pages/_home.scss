@@ -14,11 +14,7 @@
     color: #c8d6e5;
   }
 }
-main {
-  .carousel {
-    height: 30vh;
-  }
-
+.main--home{
   & .menu--list {
     width: 95%;
     display: flex;
@@ -27,7 +23,7 @@ main {
     }
   }
   & .section {
-    padding: 2% 0.5%;
+    padding: 6% 0.5%;
     display: flex;
     justify-content: space-between;
     & .categoryMovie {

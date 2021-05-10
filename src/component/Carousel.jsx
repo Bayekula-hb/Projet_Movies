@@ -27,7 +27,7 @@ const CarouselMovies = () => {
     return ""
   });
   return (
-    <Carousel className="carousel carousel-container">
+    <Carousel className="carousel carousel-container row">
       {filmTab.map((film) => {
         
         return (

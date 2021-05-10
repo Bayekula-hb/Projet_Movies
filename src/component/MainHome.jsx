@@ -14,7 +14,7 @@ const Mainhome = () => {
   return (
     <>
       <CarouselMovies />
-      <main className="container-fluid">
+      <main className="main--home">
         <SectionMovies
         nameSection="section--action"
           titleSection="Action & Adventure"
