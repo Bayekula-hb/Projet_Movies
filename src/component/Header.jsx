@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const MyHeader = styled.header`
+    width:100%;
     font-size: 2rem;
     background-color :#2f3542;
 }
   `;
   return (
     <MyHeader>
-      <nav className="navbar navbar-expand-lg navbar-light  row justify-content-around" >
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top row justify-content-around" >
         <h1 className="navbar-brand col-1"><Link className="link link--h1" to="/"> H-Cine  </Link></h1>
         <button
           className="navbar-toggler col-6"

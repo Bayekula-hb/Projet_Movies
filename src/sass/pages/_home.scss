@@ -1,11 +1,45 @@
-.carousel-container{
-
-    & .img--carousel{
-        height: 20%;
-    }
+.carousel-container {
+  & .img--carousel {
+    height: 20%;
+  }
+  & .title--film {
+    color: #ee5253;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  & p {
+    font-size: 2rem;
+    font-family: "Ubuntu";
+    text-align: justify;
+    color: #c8d6e5;
+  }
 }
 main {
   .carousel {
     height: 30vh;
+  }
+
+  & .menu--list {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    & li {
+    }
+  }
+  & .section--movies {
+    display: flex;
+    justify-content: space-between;
+    & .categoryMovie {
+      font-size: 3rem;
+    }
+    & .movies--container {
+      & .card--film{
+        margin: 1% 0%;
+        & .image--card{
+          width: 100%;
+        }
+      }
+
+    }
   }
 }

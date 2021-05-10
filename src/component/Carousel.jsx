@@ -22,8 +22,9 @@ const CarouselMovies = () => {
   const linkImage = "https://image.tmdb.org/t/p/w1280/";
   const filmTab = listFilm.filter((film, index) => {
     if (index > 0 && index < 4) {
-      return film
+      return film;
     }
+    return ""
   });
   return (
     <Carousel className="carousel carousel-container">
@@ -32,13 +33,14 @@ const CarouselMovies = () => {
         return (
           loading ? <ReactLoading type="bars" color="#ee5253" height={'20%'} width={'20%'} /> :
           <Carousel.Item  >
+            {loading ? <ReactLoading type="bars" color="#ee5253" height={'20%'} width={'20%'} /> :
             <img
               className="d-block w-100 img--carousel"
               src={linkImage+film.backdrop_path}
               alt={film.title}
-            />
+            />}
             <Carousel.Caption>
-              <h3>{film.title}</h3>
+              <h3 className="title--film">{film.title}</h3>
               <p>{film.overview}</p>
             </Carousel.Caption>
           </Carousel.Item>
