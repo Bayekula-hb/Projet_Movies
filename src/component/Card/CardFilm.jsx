@@ -12,7 +12,7 @@ const CardFilm = ({imageFilm, titleFilm, overviewFilm, idMovies, clickCard}) => 
         <Card.Text>
             {overviewFilm}
         </Card.Text>
-        <Link variant="primary" onClick={clickCard} to={`/movies/${idMovies}`}>Plus</Link>
+        <Link className="link--card" variant="primary" onClick={clickCard} to={`/movies/${idMovies}`}>Plus</Link>
       </Card.Body>
     </Card>
   );

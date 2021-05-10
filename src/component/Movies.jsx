@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import CardFilm from "./Card/CardFilm";
+import PaginationMovies from "./Pagination/Pagination";
 
 const Movies = () => {
   const [listFilmPopular, setlistFilmPopular] = useState([]);
@@ -26,14 +27,15 @@ const Movies = () => {
       <div className="row col-12 justify-content-between container--film">
         {listFilmPopular.map((film)=>{
             return(
-                <CardFilm
+                <CardFilm key={film.id}
                 imageFilm={'https://image.tmdb.org/t/p/original/'+film.backdrop_path}
                 titleFilm={film.title}
                 idMovies={film.id}
                 />
             )
         })}
-      </div>    
+      </div>
+      <PaginationMovies />  
     </div>
   );
 };
