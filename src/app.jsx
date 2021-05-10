@@ -2,7 +2,7 @@ import React from "react";
 import "./sass/main.scss";
 import Header from "./component/Header";
 import Mainhome from "./component/MainHome";
-import { Switch, Route, Router } from "react-router";
+import { Switch, Route} from "react-router";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Movies from "./component/Movies";

@@ -39,7 +39,6 @@ export default function UsePagination() {
               </button>
             );
           }
-
           return <li className="link--pagination" key={index}>{children}</li>;
         })}
       </ul>
