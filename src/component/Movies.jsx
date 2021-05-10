@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import CardFilm from "./Card/CardFilm";
-import PaginationMovies from "./Pagination/Pagination";
+import UsePagination from "./Pagination/Pagination";
+// import PaginationMovies from "./Pagination/Pagination";
 
 const Movies = () => {
   const [listFilmPopular, setlistFilmPopular] = useState([]);
@@ -19,7 +20,6 @@ const Movies = () => {
         setResultFilmSearch(films);
       });
   }, []);
-  console.log(listFilmPopular);
   return (
     <div className="main--movies row">
       <h2 className="col-12">all movies</h2>
@@ -35,7 +35,7 @@ const Movies = () => {
             )
         })}
       </div>
-      <PaginationMovies />  
+     <UsePagination />
     </div>
   );
 };

@@ -26,4 +26,28 @@
         }
       }
   }
+  & .nav--pagination{
+      width: 50%;
+      margin: 3% auto;
+      background-color: #182C61!important;
+      border-radius: 12px;
+      & .link--pagination{
+          font-size: 2rem;
+          margin: 0 2%;
+          color: springgreen;
+      }
+      & button{
+          color: #FC427B;
+          font-weight: 700;
+          align-self: center;
+          border: none;
+          padding: 3%;
+          margin: 2%;
+          background-color: #CAD3C8;
+          background-color: transparent;
+          &:hover,&:focus{
+              color: #55E6C1;
+          }
+      }
+  }
 }
