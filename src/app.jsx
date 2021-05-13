@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.themoviedb.org/3/movie/popular?api_key=b5be08aabb5691e1522a3bd74604d1ee&language=en-US&page=1"
+        "https://api.themoviedb.org/3/movie/popular?api_key=b5be08aabb5691e1522a3bd74604d1ee&language=fr-FR&page=1"
       )
       .then((dataFilm) => {
         return dataFilm.data.results;
@@ -22,18 +22,16 @@ const App = () => {
         setlistMoviesPopular(data);
       });
   }, []);
-
   return (
     <>
       <Header />
       <Switch>
         <filmPopularContext.Provider value={listMoviesPopular}>
           <Route exact path="/">
-            <Mainhome />
+            <Mainhome/>
           </Route>
-          <Route path="/movies">
-            <Movies />
-          </Route>
+          <Route path="/movies" component={Movies}></Route>
+          <Route path="/movie/:id" component={Movies}></Route>
         </filmPopularContext.Provider>
       </Switch>
     </>

@@ -1,20 +1,26 @@
 .carousel-container {
-  & .img--carousel {
-    height: 20%;
-  }
-  & .title--film {
-    color: #ee5253;
-    font-size: 4rem;
-    font-weight: 700;
-  }
-  & p {
-    font-size: 2rem;
-    font-family: "Ubuntu";
-    text-align: justify;
-    color: #c8d6e5;
+  // height: 20vh;
+  .card--carousel {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    & .img--carousel {
+      height: 100%;
+    }
+    & .title--film {
+      color: #ee5253;
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    & p {
+      font-size: 2rem;
+      font-family: "Ubuntu";
+      text-align: justify;
+      color: #c8d6e5;
+    }
   }
 }
-.main--home{
+.main--home {
   & .menu--list {
     width: 95%;
     display: flex;
@@ -65,13 +71,11 @@
   & .section--action {
     background-color: #2f3542;
   }
-  & .section--drama{
+  & .section--drama {
     flex-direction: row-reverse;
     background-color: #84817a;
-   
   }
-  & .section--comedy{
+  & .section--comedy {
     background-color: #2f3542;
-  
   }
 }

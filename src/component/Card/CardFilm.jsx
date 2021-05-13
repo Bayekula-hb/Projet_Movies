@@ -1,18 +1,17 @@
+import { useState } from "react";
 import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 const CardFilm = ({imageFilm, titleFilm, overviewFilm, idMovies, clickCard}) => {
-
   return (
-    <Card key={idMovies} style={{ width: "22rem" }} className="col-12 col-sm-auto align-self-center card--film">
+    <Card  key={idMovies} style={{ width: "22rem" }} className="col-12 col-sm-auto align-self-center card--film">
       <Card.Img variant="top" src={imageFilm} className="image--card"/>
       <Card.Body>
-        <Card.Title>{titleFilm}</Card.Title>
+        <Card.Title className="card--title">{titleFilm}</Card.Title>
         <Card.Text>
             {overviewFilm}
         </Card.Text>
-        <Link className="link--card" variant="primary" onClick={clickCard} to={`/movies/${idMovies}`}>Plus</Link>
+        <Link className="link--card" variant="primary" onClick={clickCard} to={`/movie/${idMovies}`}>Plus</Link>
       </Card.Body>
     </Card>
   );

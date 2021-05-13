@@ -9,7 +9,7 @@ const CarouselMovies = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.themoviedb.org/3/movie/popular?api_key=b5be08aabb5691e1522a3bd74604d1ee&language=en-US&page=1"
+        "https://api.themoviedb.org/3/movie/popular?api_key=b5be08aabb5691e1522a3bd74604d1ee&language=fr-FR&page=1"
       )
       .then((dataFilm) => {
         return dataFilm.data.results;
@@ -32,7 +32,7 @@ const CarouselMovies = () => {
         
         return (
           loading ? <ReactLoading type="bars" color="#ee5253" height={'20%'} width={'20%'} /> :
-          <Carousel.Item  >
+          <Carousel.Item className="card--carousel" >
             {loading ? <ReactLoading type="bars" color="#ee5253" height={'20%'} width={'20%'} /> :
             <img
               className="d-block w-100 img--carousel"

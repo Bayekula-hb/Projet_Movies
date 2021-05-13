@@ -25,7 +25,7 @@ const Mainhome = () => {
               return (
                 <CardFilm 
                   key={film.id}
-                  imageFilm={"https://image.tmdb.org/t/p/original/"+ film.backdrop_path}
+                  imageFilm={"https://image.tmdb.org/t/p/original/"+ film.poster_path}
                   titleFilm={film.title}
                   idMovies={film.id}
                 />
