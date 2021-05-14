@@ -40,7 +40,7 @@ const DetailsMovie = (props) => {
     <divLoading className="div--react--loading">
       <ReactLoading
         type="spokes"
-        color="#2F3542"
+        color="#FC427B"
         height={600}
         width={370}
         className="align-selft-center reactLoading"
