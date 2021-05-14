@@ -67,6 +67,14 @@ const DetailsMovie = (props) => {
             </span>
             <span className="col-12">Popularité : {props.popularity} </span>
             <p className="companyProduction col-12">
+              <h3 className="col-12">Genre</h3>
+              <ul className="col-12 row">
+                {props.genres.map((genre) => (
+                  <li className="col-12">{genre.name}</li>
+                ))}
+              </ul>
+            </p>
+            <p className="companyProduction col-12">
               <h3 className="col-12">Maison de Production</h3>
               <ul className="col-12 row">
                 {props.production_companies.map((compagnie) => (

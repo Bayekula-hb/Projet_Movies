@@ -13,29 +13,8 @@ const Movies = (props) => {
 
   
   let idMovie = Number(props.match.params.id);
-  // async function fetchMoviesDetails(id) {
-  //     const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=b5be08aabb5691e1522a3bd74604d1ee&language=fr-FR`);
-  //     const data = await response.data;
-  //     console.log("data : ",data);
-  //   return data;
-  // }
   const DetailFilm =  (id) => {
     useEffect(() => {
-    //   async function fetchMoviesDetails(id) {
-    //     const response = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=b5be08aabb5691e1522a3bd74604d1ee&language=fr-FR`);
-    //     const data = await response.data;
-    //    return data;
-    // }
-    
-
-      // try {
-      //   const dataMovie = fetchMoviesDetails(id);
-      //   setMovieDetails(fetchMoviesDetails(id))
-      //   console.log("dataMovie dans detail : ",dataMovie);
-      //   // setMovieDetails(dataMovie);
-      // } catch (error) {
-        
-      // }
       axios
         .get(
           `https://api.themoviedb.org/3/movie/${id}?api_key=b5be08aabb5691e1522a3bd74604d1ee&language=fr-FR`
@@ -70,7 +49,7 @@ const Movies = (props) => {
   };
 
   return (
-    idMovie ? <DetailsMovie  {...movieDetails}/> : 
+    idMovie ? <DetailsMovie  {...movieDetails} {...idMovie}/> : 
     <div className="main--movies row">
       <h2 className="col-12">all movies</h2>
       <div className="row col-12 justify-content-between container--film">
